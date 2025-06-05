@@ -14,9 +14,7 @@ function updateImage(shoeId) {
         mainImage.src = selectedShoe.image;
     }
 
-    
     icons.forEach(icon => icon.classList.remove('icon-active'));
-
 
     const activeIcon = document.querySelector(`.icon[data-shoe="${shoeId}"]`);
     if (activeIcon) {
@@ -30,6 +28,5 @@ icons.forEach(icon => {
         updateImage(shoeId);
     });
 });
-
 
 updateImage(1);
